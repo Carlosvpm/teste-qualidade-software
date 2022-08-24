@@ -1,7 +1,6 @@
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 import time
+from utils import driver
 
 usernamElementId = 'username'
 passwordElementId = 'password'
@@ -9,15 +8,15 @@ sendButtonXPATH = '//*[@id="boxForm"]/div/form/div[3]/button'
 UNDBClassURL = 'https://undbclassroom.undb.edu.br/'
 buttonAcceptCookies = '//*[@id="freeprivacypolicy-com---nb"]/div/div[3]/button[1]'
 
-USERNAME = 'username'
-PASSWORD = 'password'
-
-driver = webdriver.Chrome("./utils/chromedriver.exe")
-driver.get(UNDBClassURL)
-driver.maximize_window()
+USERNAME = '002-022567'
+PASSWORD = '2002VINI'
 
 
 def login():
+   
+    driver.get(UNDBClassURL)
+    driver.maximize_window()
+
     time.sleep(1)
 
     elem = driver.find_element(By.XPATH, buttonAcceptCookies)
@@ -32,6 +31,6 @@ def login():
     elem = driver.find_element(By.XPATH,sendButtonXPATH)
     elem.click()
 
-if(__name__ == '__main__'):
-    login()
-    driver.close()
+# if(__name__ == '__main__'):
+#     login()
+#     driver.close()
