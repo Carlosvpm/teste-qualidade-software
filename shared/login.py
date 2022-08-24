@@ -3,11 +3,14 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 import time
 
-usernamId = 'username'
-passwordId = 'password'
+usernamElementId = 'username'
+passwordElementId = 'password'
 sendButtonXPATH = '//*[@id="boxForm"]/div/form/div[3]/button'
 UNDBClassURL = 'https://undbclassroom.undb.edu.br/'
 buttonAcceptCookies = '//*[@id="freeprivacypolicy-com---nb"]/div/div[3]/button[1]'
+
+USERNAME = 'username'
+PASSWORD = 'password'
 
 driver = webdriver.Chrome("./utils/chromedriver.exe")
 driver.get(UNDBClassURL)
@@ -20,11 +23,11 @@ def login():
     elem = driver.find_element(By.XPATH, buttonAcceptCookies)
     elem.click()
 
-    elem = driver.find_element(By.ID, usernamId)
-    elem.send_keys("002-022567")
+    elem = driver.find_element(By.ID, usernamElementId)
+    elem.send_keys(USERNAME)
 
-    elem = driver.find_element(By.ID, passwordId)
-    elem.send_keys("2002VINI")
+    elem = driver.find_element(By.ID, passwordElementId)
+    elem.send_keys(PASSWORD)
 
     elem = driver.find_element(By.XPATH,sendButtonXPATH)
     elem.click()
