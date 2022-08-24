@@ -1,12 +1,12 @@
 from selenium.webdriver.common.by import By
 import time
-from utils import driver
+from utils import driver, buttonAcceptCookies, UNDBClassURL
 
 usernamElementId = 'username'
 passwordElementId = 'password'
 sendButtonXPATH = '//*[@id="boxForm"]/div/form/div[3]/button'
-UNDBClassURL = 'https://undbclassroom.undb.edu.br/'
-buttonAcceptCookies = '//*[@id="freeprivacypolicy-com---nb"]/div/div[3]/button[1]'
+
+
 
 USERNAME = '002-022567'
 PASSWORD = '2002VINI'
