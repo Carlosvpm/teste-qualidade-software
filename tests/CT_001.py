@@ -22,9 +22,10 @@ def CT_001():
 execution =( time.time() - start_time) * 1000
 
 if(__name__ == '__main__'):
+    start_time = time.time()
     CT_001()
     time.sleep(3)
     driver.close()
-    print("Done in", round(execution, 4), "ms." )
+    print("Done in", round(time.time() - start_time, 2), "s.")
 
 
