@@ -17,26 +17,25 @@ def CT_002():
       getUrlCalendarButtonId = 'id_generateurl'
       getUrlCalendarElementXPath = '//*[@id="region-main"]/div/div/div/div/div'
       
-      elem = driver.find_element(By.XPATH, exportCalendarButtonXPath)
-      elem.click()
+      xportCalendarButton = driver.find_element(By.XPATH, exportCalendarButtonXPath)
+      xportCalendarButton.click()
 
-      elem = driver.find_element(By.NAME, eventsToExportInputName)
-      elem.click()
+      eventsToExportInput = driver.find_element(By.NAME, eventsToExportInputName)
+      eventsToExportInput.click()
 
-      elem = driver.find_element(By.NAME, periodToExportInputName)
-      elem.click()
+      periodToExportInput = driver.find_element(By.NAME, periodToExportInputName)
+      periodToExportInput.click()
 
-      elem = driver.find_element(By.ID, getUrlCalendarButtonId)
-      elem.click()
-
-      elem = driver.find_element(By.XPATH, getUrlCalendarElementXPath)
-      elem.click()
+      urlLink = driver.find_element(By.ID, getUrlCalendarButtonId)
+      urlLink.click()
+      
+      urlCalendar = driver.find_element(By.XPATH, getUrlCalendarElementXPath)
+      urlCalendar.click()
 
       print('CT_002: ✅ - Exportar calendário por link clicável')
 
     except:
       print('CT_002: ❌ - Exportar calendário por link clicável')
-
 
 
 if(__name__ == '__main__'):
