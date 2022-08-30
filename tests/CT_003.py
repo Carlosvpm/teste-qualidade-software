@@ -59,7 +59,7 @@ def CT_003():
 if(__name__ == '__main__'):
     start_time = time.time()
     CT_003()
-    time.sleep(100)
+    time.sleep(3)
     driver.close()
     print("Done in", round(time.time() - start_time, 2), "s.")
 
