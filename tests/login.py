@@ -8,8 +8,8 @@ sendButtonXPATH = '//*[@id="boxForm"]/div/form/div[3]/button'
 
 
 
-USERNAME = '002-022567'
-PASSWORD = '2002VINI'
+USERNAME = 'USERNAME'
+PASSWORD = 'PASSWORD'
 
 
 def login():

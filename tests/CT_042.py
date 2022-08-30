@@ -6,7 +6,7 @@ from utils import driver, buttonAcceptCookies, UNDBClassURL
 usernamElementId = 'username'
 passwordElementId = 'password'
 sendButtonXPATH = '//*[@id="boxForm"]/div/form/div[3]/button'
-PASSWORD = '2002VINI'
+PASSWORD = 'PASSWORD'
 
 def CT_042():
     
