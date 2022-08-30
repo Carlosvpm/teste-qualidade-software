@@ -13,5 +13,5 @@ def CT_047():
 
 if(__name__ == '__main__'):
     CT_047()
-    time.sleep(2)
+    print('CT_047: ✅')
     driver.close()
