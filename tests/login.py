@@ -1,6 +1,6 @@
 from selenium.webdriver.common.by import By
 import time
-from utils import driver, buttonAcceptCookies, UNDBClassURL
+from utils import driver, buttonAcceptCookies, UNDBClassURL, USERNAME, PASSWORD
 
 usernamElementId = 'username'
 passwordElementId = 'password'
@@ -8,8 +8,6 @@ sendButtonXPATH = '//*[@id="boxForm"]/div/form/div[3]/button'
 
 
 
-USERNAME = 'USERNAME'
-PASSWORD = 'PASSWORD'
 
 
 def login():
