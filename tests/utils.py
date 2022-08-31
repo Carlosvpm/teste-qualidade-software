@@ -12,3 +12,5 @@ driver = webdriver.Chrome() if platform.system() == 'Darwin' else webdriver.Chro
 
 USERNAME='USERNAME'
 PASSWORD ='PASSWORD'
+
+RETURN = '\ue006'
