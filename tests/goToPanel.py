@@ -1,5 +1,5 @@
 from time import sleep
-from tests.login import login
+from login import login
 from utils import driver
 from selenium.webdriver.common.by import By
 

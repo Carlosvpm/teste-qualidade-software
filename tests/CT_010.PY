@@ -1,7 +1,6 @@
 from time import sleep
-from tests.login import login
-from tests.utils import RETURN
-from utils import driver
+from login import login
+from utils import RETURN, driver
 from selenium.webdriver.common.by import By
 
 

@@ -1,7 +1,7 @@
 from selenium import webdriver
 import platform
 
-from tests.CT_042 import PASSWORD
+from CT_042 import PASSWORD
 
 UNDBClassURL = 'https://undbclassroom.undb.edu.br/'
 
