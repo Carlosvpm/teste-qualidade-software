@@ -26,7 +26,7 @@ def CT_008():
       filterButton = driver.find_element(By.ID, filterButtonId)
       filterButton.click()
 
-      dropdownMenu = driver.find_element(By.XPATH, dropdownMenu)
+      dropdownMenu = driver.find_element(By.XPATH, dropdownMenuXPath)
       actions.move_to_element(dropdownMenu)
       actions.perform()
 
