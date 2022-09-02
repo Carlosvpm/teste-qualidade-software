@@ -32,8 +32,9 @@ def CT_004():
 
       print('CT_004: ✅ - Adicionar novo evento no calendário')
 
-    except:
+    except Exception as error:
       print('CT_004: ❌ - Adicionar novo evento no calendário')
+      print(error)
 
 
 if(__name__ == '__main__'):

@@ -34,8 +34,9 @@ def CT_002():
 
       print('CT_002: ✅ - Exportar calendário por link clicável')
 
-    except:
+    except Exception as error:
       print('CT_002: ❌ - Exportar calendário por link clicável')
+      print(error)
 
 
 if(__name__ == '__main__'):

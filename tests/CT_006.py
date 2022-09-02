@@ -30,8 +30,9 @@ def CT_006():
 
       print('CT_006: ✅ - Exibir somente cursos em andamento')
 
-    except:
+    except Exception as error:
       print('CT_006: ❌ - Exibir somente cursos em andamento')
+      print(error)
 
 
 if(__name__ == '__main__'):

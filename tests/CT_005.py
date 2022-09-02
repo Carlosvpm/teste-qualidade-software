@@ -30,8 +30,9 @@ def CT_005():
 
       print('CT_005: ✅ - Exibir cursos não iniciados')
 
-    except:
+    except Exception as error:
       print('CT_005: ❌ - Exibir cursos não iniciados')
+      print(error)
 
 
 if(__name__ == '__main__'):

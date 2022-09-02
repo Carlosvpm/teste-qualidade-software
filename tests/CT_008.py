@@ -35,8 +35,9 @@ def CT_008():
       
       print('CT_008: ✅ - Exibir todos os cursos no formato de lista')
 
-    except:
+    except Exception as error:
       print('CT_008: ❌ - Exibir todos os cursos no formato de lista')
+      print(error)
 
 
 if(__name__ == '__main__'):

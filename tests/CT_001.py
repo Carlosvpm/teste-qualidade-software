@@ -18,8 +18,9 @@ def CT_001():
 
       print('CT_001: ✅ - Exibir datas de atividades das disciplinas em curso no calendário')
 
-    except:
+    except Exception as error:
       print('CT_001: ❌ - Exibir datas de atividades das disciplinas em curso no calendário')
+      print(error)
 
 execution =( time.time() - start_time) * 1000
 
