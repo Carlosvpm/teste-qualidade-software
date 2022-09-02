@@ -3,6 +3,8 @@ from login import login
 from utils import driver
 from selenium.webdriver.common.by import By
 
+# Teste de 01 a 10 feitos por Beatriz Salles
+
 start_time = time.time()
 # Exibir datas de atividades das disciplinas em curso no calendário
 def CT_001():

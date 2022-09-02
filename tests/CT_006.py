@@ -25,7 +25,7 @@ def CT_006():
       startedCoursesOption = driver.find_element(By.ID, startedCoursesOptionId)
       startedCoursesOption.click()
 
-      assert 'ES05AN-2022.2 - SEGURANÇA E AUDITORIA DE SISTEMAS' not in driver.page_source
+      assert 'GEREN_ASTS-080-2022.2 - TESTE E QUALIDADE DE SOFTWARE' in driver.page_source
       
 
       print('CT_006: ✅ - Exibir somente cursos em andamento')
