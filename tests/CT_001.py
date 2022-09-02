@@ -3,6 +3,8 @@ from login import login
 from utils import driver
 from selenium.webdriver.common.by import By
 
+# Teste de 01 a 10 feitos por Beatriz Salles
+
 start_time = time.time()
 # Exibir datas de atividades das disciplinas em curso no calendário
 def CT_001():
@@ -16,8 +18,9 @@ def CT_001():
 
       print('CT_001: ✅ - Exibir datas de atividades das disciplinas em curso no calendário')
 
-    except:
+    except Exception as error:
       print('CT_001: ❌ - Exibir datas de atividades das disciplinas em curso no calendário')
+      print(error)
 
 execution =( time.time() - start_time) * 1000
 

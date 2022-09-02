@@ -26,7 +26,7 @@ def CT_008():
       filterButton = driver.find_element(By.ID, filterButtonId)
       filterButton.click()
 
-      dropdownMenu = driver.find_element(By.XPATH, dropdownMenu)
+      dropdownMenu = driver.find_element(By.XPATH, dropdownMenuXPath)
       actions.move_to_element(dropdownMenu)
       actions.perform()
 
@@ -35,8 +35,9 @@ def CT_008():
       
       print('CT_008: ✅ - Exibir todos os cursos no formato de lista')
 
-    except:
+    except Exception as error:
       print('CT_008: ❌ - Exibir todos os cursos no formato de lista')
+      print(error)
 
 
 if(__name__ == '__main__'):

@@ -52,8 +52,9 @@ def CT_003():
 
       print('CT_003: ✅ - Adicionar calendário ao Google Agenda')
 
-    except:
+    except Exception as error:
       print('CT_003: ❌ - Adicionar calendário ao Google Agenda')
+      print(error)
 
 
 if(__name__ == '__main__'):
